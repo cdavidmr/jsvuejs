@@ -1,4 +1,4 @@
 
 function alerta() {
-    alert("Esto es una alerta");
+    window.alert("Esto es unb alerta");
 };

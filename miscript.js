@@ -5,4 +5,4 @@ function alerta() {
 }
 
 var miTitulo = document.querySelector('h1');
-miTitulo.innerHTML = 'Hello world js!';
+miTitulo.innerHTML = 'Hello world js!<br>git pull origin';

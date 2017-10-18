@@ -1,8 +1,7 @@
-
+console.log("Hola Mundo!");
 
 function alerta() {
     alert("Esto es una alerta");
-    console.log("Hola Mundo!");
 }
 
 var miTitulo = document.querySelector('h1');

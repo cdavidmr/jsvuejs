@@ -1,7 +1,7 @@
 console.log('Hello world!')
 console.log('Learning js')
 console.log(1+19)
-console.log(Math.sqrt(3))
+console.log(Math.sqrt(9))
 function alerta() {
     alert("Esto es una alerta");
     var miTitulo = document.querySelector('h1');

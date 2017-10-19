@@ -11,35 +11,50 @@
 </head>
 
 <body>
+
   <div id="appID">
 
-    <md-toolbar>
-      <h1 class="md-title">Material Vue Flat Buttons</h1>
-    </md-toolbar>
+    <md-toolbar class="md-dense">
+      <div class="md-toolbar-container">
+        <md-button class="md-icon-button">
+          <md-icon>menu</md-icon>
+        </md-button>
 
-    <div class="main-content">
-      <p>Material Vue Flat Buttons</p>
-      <md-button @click.native="greet('Default')">Default</md-button>
-      <md-button class="md-primary" @click.native="greet('Primary Buuton')">Primary</md-button>
-      <md-button class="md-accent" @click.native="greet('Accent')">Accent</md-button>
-      <md-button class="md-warn" @click.native="greet('Warn')">Warn</md-button>
-      <md-button class="md-primary" disabled>Disabled</md-button>
-      <md-button class="md-dense" @click.native="greet('Dense')">Dense</md-button>
-      <md-button class="md-raised">Default</md-button>
-      <md-button class="md-raised md-primary">Primary</md-button>
-      <md-button class="md-raised md-accent">Accent</md-button>
-      <md-button class="md-raised md-primary" disabled>Disabled</md-button>
-      <md-button class="md-raised md-dense">Dense</md-button>
-    </div>
+        <h2 class="md-title" style="flex: 1">Test and Learning Vuejs with Material</h2>
+
+        <md-button class="md-icon-button">
+          <md-icon>search</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>exit_to_app</md-icon>
+        </md-button>
+      </div>
+      </md-toolbar>
+
+      <div class="main-content">
+        <p>Material Vue Flat Buttons</p>
+        <md-button @click.native="greet('Default')">Default</md-button>
+        <md-button class="md-primary" @click.native="greet('Primary Buuton')">Primary</md-button>
+        <md-button class="md-accent" @click.native="greet('Accent')">Accent</md-button>
+        <md-button class="md-warn" @click.native="greet('Warn')">Warn</md-button>
+        <md-button class="md-primary" disabled>Disabled</md-button>
+        <md-button class="md-dense" @click.native="greet('Dense')">Dense</md-button>
+        <md-button class="md-raised">Default</md-button>
+        <md-button class="md-raised md-primary">Primary</md-button>
+        <md-button class="md-raised md-accent">Accent</md-button>
+        <md-button class="md-raised md-primary" disabled>Disabled</md-button>
+        <md-button class="md-raised md-dense">Dense</md-button>
+      </div>
   </div>
 
   <div id="app2">
-      <md-card class="card-content">
-        <md-card-content>
-          <md-button class="md-raised md-warn" v-on:click="counter += 1">{{counter}}</md-button>
-          <p>The button above has been clicked {{ counter }} times.</p>
-        </md-card-content>
-      </md-card>
+    <md-card class="card-content">
+      <md-card-content>
+        <md-button class="md-raised md-warn" v-on:click="counter += 1">{{counter}}</md-button>
+        <p>The button above has been clicked {{ counter }} times.</p>
+      </md-card-content>
+    </md-card>
   </div>
 
   <script src="https://unpkg.com/vue"></script>

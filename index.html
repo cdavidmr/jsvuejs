@@ -17,7 +17,7 @@
       <h1 class="md-title">Material Vue Flat Buttons</h1>
     </md-toolbar>
 
-    <div class="content">
+    <div class="main-content">
       <p>Material Vue Flat Buttons</p>
       <md-button @click.native="greet('Default')">Default</md-button>
       <md-button class="md-primary" @click.native="greet('Primary Buuton')">Primary</md-button>
@@ -25,13 +25,21 @@
       <md-button class="md-warn" @click.native="greet('Warn')">Warn</md-button>
       <md-button class="md-primary" disabled>Disabled</md-button>
       <md-button class="md-dense" @click.native="greet('Dense')">Dense</md-button>
+      <md-button class="md-raised">Default</md-button>
+      <md-button class="md-raised md-primary">Primary</md-button>
+      <md-button class="md-raised md-accent">Accent</md-button>
+      <md-button class="md-raised md-primary" disabled>Disabled</md-button>
+      <md-button class="md-raised md-dense">Dense</md-button>
     </div>
+  </div>
 
-    <md-input-container>
-      <label>Textarea</label>
-      <md-textarea></md-textarea>
-    </md-input-container>
-
+  <div id="app2">
+      <md-card class="card-content">
+        <md-card-content>
+          <md-button class="md-raised md-warn" v-on:click="counter += 1">{{counter}}</md-button>
+          <p>The button above has been clicked {{ counter }} times.</p>
+        </md-card-content>
+      </md-card>
   </div>
 
   <script src="https://unpkg.com/vue"></script>

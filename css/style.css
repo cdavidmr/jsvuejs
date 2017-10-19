@@ -1,3 +1,8 @@
 .main-content {
-  padding: 20px;
+  padding: 10px;
+}
+.card-content{
+  margin-left: 10%;
+  width: 30%;
+  height: 10%;  
 }

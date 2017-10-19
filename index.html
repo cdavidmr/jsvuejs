@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Material Vue Flat Buttons</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet prefetch' href='https://unpkg.com/vue-material@0.7.1/dist/vue-material.css'>
 
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
 
 <body>
+  <div id="appID">
 
-    <div id="app">
-        <md-toolbar>
-            <h1 class="md-title">Vue material goooooo</h1>
-        </md-toolbar>
+  <md-toolbar>
+    <h1 class="md-title">Material Vue Flat Buttons</h1>
+  </md-toolbar>
 
-        <div class="main-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque officiis sit minus dignissimos itaque molestiae
-                vel unde pariatur, dolore qui at earum culpa totam modi tempora numquam adipisci vero sint?</p>
-        </div>
-    </div>
+  <div class="content">
+    <p>Material Vue Flat Buttons</p>
+    <md-button @click.native="greet('Default')">Default</md-button>
+    <md-button class="md-primary" @click.native="greet('Primary Buuton')">Primary</md-button>
+    <md-button class="md-accent" @click.native="greet('Accent')">Accent</md-button>
+    <md-button class="md-warn" @click.native="greet('Warn')">Warn</md-button>
+    <md-button class="md-primary" disabled>Disabled</md-button>
+    <md-button class="md-dense" @click.native="greet('Dense')">Dense</md-button>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js'></script>
+<script src='https://unpkg.com/vue-material@0.7.1'></script>
 
-    
-    <script src="src/index.js"></script>
-    <script src="miscript.js"></script>
+    <script  src="js/index.js"></script>
+
 </body>
-
 </html>

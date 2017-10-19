@@ -1,4 +1,4 @@
-console.log('Hello world!')
+console.log('Hello gitlab!')
 console.log('Learning js')
 console.log(1+19)
 console.log(Math.sqrt(25))
